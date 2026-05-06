@@ -21,7 +21,7 @@ body{
 }
 
 img{
-    width:350px;
+    width:500px;
 
     position:absolute;
     bottom:-500px;
@@ -53,7 +53,7 @@ img{
     }
 
     to{
-        bottom:120px;
+        bottom:180px;
     }
 }
 
@@ -80,9 +80,15 @@ img{
     YOU ARE FUCKING GAY
 </div>
 
-<audio autoplay>
+<audio id="sound">
     <source src="monkey.mp3" type="audio/mpeg">
 </audio>
+
+<script>
+document.body.addEventListener("click", () => {
+    document.getElementById("sound").play();
+});
+</script>
 
 </body>
 </html>
